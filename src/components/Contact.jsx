@@ -20,8 +20,8 @@ function Contact() {
             className={contactStyle.formContainer}
             name="contact"
             method="POST"
-            data-netlify="true"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               className={contactStyle.contactFormName}

@@ -1,11 +1,9 @@
 import style from "../style_modules/component_modules/projects.module.css";
+import placeholder from "../assets/placeholder-image.jpg";
 function ProjectCard(props) {
   return (
     <div className={style.projectCardContainer}>
-      <img
-        src="src/assets/placeholder-image.jpg"
-        className={style.cardImageContainer}
-      />
+      <img src={placeholder} className={style.cardImageContainer} />
       <div className={style.projectCardBottomContainer}>
         <div className={style.projectCardTitleContainer}>
           <h1>{props.projectInstance.title}</h1>
