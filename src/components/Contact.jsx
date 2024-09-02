@@ -41,7 +41,10 @@ function Contact() {
               rows="10"
             ></textarea>
             <div className={contactStyle.contactSubmitContainer}>
-              <button className={contactStyle.contactFormSubmitBtn}>
+              <button
+                type="submit"
+                className={contactStyle.contactFormSubmitBtn}
+              >
                 Submit
               </button>
             </div>
