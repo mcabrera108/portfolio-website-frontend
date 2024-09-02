@@ -1,0 +1,67 @@
+:root {
+  --font-df-family: monospace, "Press Start 2P", "Arial", sans-serif;
+  --font-redirect-family: "Press Start 2P", monospace, "Arial", sans-serif;
+  --default-font-color: white;
+  --default-bg-color: rgba(247, 107, 52, 0.788);
+  --default-redir-btn-color: rgb(248, 190, 65);
+}
+.contactContainer {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.contactFormContainer {
+  background-color: red;
+}
+.contactDescriptionContainer {
+  width: 100%;
+  text-align: center;
+}
+.contactFormName {
+  padding: 0.8rem 0.5rem;
+  font-family: var(--font-df-family);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+textarea {
+  resize: none;
+}
+h1 {
+  color: var(--default-font-color);
+  font-family: var(--font-df-family);
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--default-bg-color);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+.contactFormSubmitBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  background-color: var(--default-redir-btn-color);
+  border-radius: 10px;
+}
+.contactFormSubmitBtn:hover {
+  background-color: var(--default-bg-color);
+  cursor: pointer;
+}
+.contactSubmitContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 1000px) {
+  .contactContainer {
+    width: 100%;
+  }
+  .contactSubmitContainer {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,105 @@
+:root {
+  --font-df-family: monospace, "Press Start 2P", "Arial", sans-serif;
+  --font-redirect-family: "Press Start 2P", monospace, "Arial", sans-serif;
+  --default-font-color: white;
+  --default-bg-color: rgba(185, 91, 53, 0.788);
+  --default-redir-btn-color: rgb(255, 174, 0);
+}
+.projectContainer {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  width: auto;
+}
+a:hover {
+  color: var(--default-redir-btn-color);
+}
+.projectCardContainer {
+  background-color: var(--default-bg-color);
+  padding: 0.3rem 0.2rem;
+  border: 0px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 1px 1px 3px black;
+  animation: fadeInCard 2s forwards;
+  transition: all 0.5s ease-out;
+}
+.projectCardRedirectContainer {
+  width: 100%;
+}
+.projectLiveAppContainer {
+  text-align: center;
+  padding: 1rem 0;
+  width: 90%;
+  margin: 0.5rem auto;
+  font-size: 1.4rem;
+  font-family: var(--font-redirect-family);
+  color: white;
+}
+.projectCardContainer:hover {
+  scale: 1.1;
+  translate: 0 -5px;
+  cursor: pointer;
+}
+.cardImageContainer {
+  border-radius: 10px;
+  width: 100%;
+  max-height: 250px;
+}
+.projectCardBottomContainer {
+  height: 180px;
+  text-align: center;
+}
+.projectCardDescContainer {
+  color: white;
+  font-family: var(--font-df-family);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.projectCardTitleContainer {
+  margin: 1rem 0;
+  text-align: center;
+  font-family: var(--font-df-family);
+  color: white;
+}
+
+@keyframes fadeInCard {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 430px) {
+  .projectContainer {
+    width: 100%;
+  }
+  .projectCardContainer {
+    max-width: 320px;
+  }
+  .projectCardContainer:hover {
+    scale: 1;
+    translate: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projectContainer {
+    width: 95%;
+  }
+}
