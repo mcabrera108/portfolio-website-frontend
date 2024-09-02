@@ -9,7 +9,7 @@
   width: 80%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   justify-content: center;
   gap: 3rem;
@@ -91,7 +91,7 @@ a:hover {
     width: 100%;
   }
   .projectCardContainer {
-    max-width: 320px;
+    max-width: 100%;
   }
   .projectCardContainer:hover {
     scale: 1;
