@@ -31,12 +31,7 @@ function Header() {
           className={`${style.navAuthContainer} + ${
             toggle ? style.active : style.notActive
           }`}
-        >
-          <ul className={style.navAuth}>
-            <NavOpt navLink="/login" navName="Login" />
-            <NavOpt navLink="/register" navName="Register" />
-          </ul>
-        </div>
+        ></div>
       </div>
       <a className={style.iconBurger} onClick={handleToggle}>
         <span className={style.line}></span>
