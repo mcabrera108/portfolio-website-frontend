@@ -2,7 +2,7 @@
   --font-df-family: monospace, "Press Start 2P", "Arial", sans-serif;
   --font-redirect-family: "Press Start 2P", monospace, "Arial", sans-serif;
   --default-font-color: white;
-  --default-bg-color: rgba(185, 91, 53, 0.788);
+  --default-bg-color: rgba(173, 74, 34, 0.788);
   --default-redir-btn-color: rgb(255, 174, 0);
 }
 .projectContainer {
@@ -19,9 +19,6 @@ a {
   text-decoration: none;
   color: white;
   width: auto;
-}
-a:hover {
-  color: var(--default-redir-btn-color);
 }
 .projectCardContainer {
   background-color: var(--default-bg-color);
@@ -48,6 +45,14 @@ a:hover {
   font-size: 1.4rem;
   font-family: var(--font-redirect-family);
   color: white;
+  background-color: orange;
+  border-radius: 10px;
+}
+.projectLiveAppContainer:hover {
+  background-color: yellow;
+}
+.projectLiveAppContainer:hover a {
+  color: rgb(255, 81, 0);
 }
 .projectCardContainer:hover {
   scale: 1.1;

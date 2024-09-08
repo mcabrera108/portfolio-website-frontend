@@ -1,0 +1,9 @@
+.blogContainer {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin-bottom: 4rem;
+}
+.blogTitleContainer {
+  color: white;
+}

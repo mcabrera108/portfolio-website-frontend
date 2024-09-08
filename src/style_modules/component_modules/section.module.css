@@ -19,21 +19,27 @@
 .heroContainer {
   text-align: center;
 }
-.heroTitle {
+.heroTitle,
+.heroShortTitle {
   color: white;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   font-family: monospace, "Ready Player 2", sans-serif;
   overflow: hidden;
   border-right: 0.5rem solid orange;
   white-space: nowrap;
+  font-weight: 600;
   margin: 0 auto 2rem auto;
   letter-spacing: 0.15rem;
   animation: typing 3.5s steps(24, end), blink-caret 1s step-end infinite;
 }
+.heroShortTitle {
+  animation: typing 1s steps(4, end), blink-caret 1s step-end infinite;
+}
 .heroSubTitle {
+  display: flex;
   color: white;
-  width: 70%;
   opacity: 0;
+  font-weight: 600;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   border-right: 0.5rem solid orange;
   font-family: monospace;
@@ -41,8 +47,7 @@
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15rem;
-  animation: typingSubtitle 3.5s steps(17, end),
-    blink-caret 1s step-end infinite;
+  animation: typingSubtitle 2s steps(24, end), blink-caret 1s step-end infinite;
   animation-delay: 4s;
 }
 @media screen and (max-width: 1024px) {
@@ -60,7 +65,7 @@
     width: 0;
   }
   to {
-    width: 70%;
+    width: 100%;
   }
 }
 @keyframes blink-caret {

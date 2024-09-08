@@ -3,6 +3,7 @@ import App from "./App";
 import Error from "./components/Error";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Blog from "./components/Blog";
 function Router() {
   const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ function Router() {
     {
       path: "/contact",
       element: <Contact />,
+    },
+    {
+      path: "/blog",
+      element: <Blog />,
     },
   ]);
 

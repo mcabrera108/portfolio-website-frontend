@@ -4,8 +4,10 @@ function HomeBanner() {
   return (
     <section className={style.heroBanner}>
       <div className={style.heroContainer}>
-        <h1 className={style.heroTitle}>Hello! I'm Martin</h1>
-        <h2 className={style.heroSubTitle}>Software Engineer</h2>
+        <div className={style.heroTitle}>Hello! I'm Martin</div>
+      </div>
+      <div className={style.heroContainer}>
+        <div className={style.heroSubTitle}>Software Engineer</div>
       </div>
     </section>
   );
