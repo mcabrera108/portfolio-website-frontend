@@ -3,7 +3,10 @@ import placeholder from "../assets/placeholder-image.jpg";
 function ProjectCard(props) {
   return (
     <div className={style.projectCardContainer}>
-      <img src={placeholder} className={style.cardImageContainer} />
+      <img
+        src={`${props.projectInstance.codelink}`}
+        className={style.cardImageContainer}
+      />
       <div className={style.projectCardBottomContainer}>
         <div className={style.projectCardTitleContainer}>
           <h1>{props.projectInstance.title}</h1>
@@ -19,7 +22,7 @@ function ProjectCard(props) {
           </a>
         </div>
         <div className={style.projectLiveAppContainer}>
-          <a href={props.projectInstance.link} target="_blank">
+          <a href={props.projectInstance.codelink} target="_blank">
             CODE
           </a>
         </div>
