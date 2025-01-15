@@ -4,7 +4,7 @@ function ProjectCard(props) {
   return (
     <div className={style.projectCardContainer}>
       <img
-        src={`${props.projectInstance.codelink}`}
+        src={`${props.projectInstance.linkImg}`}
         className={style.cardImageContainer}
       />
       <div className={style.projectCardBottomContainer}>

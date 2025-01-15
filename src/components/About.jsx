@@ -1,4 +1,5 @@
 import style from "../style_modules/component_modules/section.module.css";
+import officeSpace from "../assets/office-space.gif";
 
 function About() {
   return (
@@ -20,7 +21,7 @@ function About() {
             my resume below for latest updates.
           </div>
           <div className={style.aboutImgContainer}>
-            <img src="src/assets/office-space.gif" alt="" />
+            <img src={officeSpace} alt="" />
           </div>
         </div>
 

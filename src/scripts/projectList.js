@@ -4,17 +4,10 @@ const projectList = [
     title: "Figure-Chan App",
     description:
       "Full Stack forum application for discussing anime figures and comic statues built with React, Node.js Express.js, MongoDB, and Passport.js.",
-    link: "https://www.amiami.com/eng/?srsltid=AfmBOorbZ1stdlezon4F2QNStc4BuGcgGneThz7RYYBqrxY2POxTj186",
-    codelink: "",
+    link: "https://figure-chan.netlify.app/",
+    codelink: "https://github.com/mcabrera108/figure-chan-frontend",
     projectKey: uuidv4(),
-  },
-  {
-    title: "Echo Messaging App",
-    description:
-      " Instant group messaging app built with React, Node.js, Express.js, MongoDB, Passport.js, and Socket.io.",
-    link: "",
-    codelink: "",
-    projectKey: uuidv4(),
+    linkImg: "https://i.imgur.com/56iCTrO.png",
   },
   {
     title: "Vidya Game Shop",
@@ -23,14 +16,16 @@ const projectList = [
     link: "",
     codelink: "",
     projectKey: uuidv4(),
+    linkImg: "",
   },
   {
     title: "My To-Do List",
     description:
       "Frontend productivity app that keeps track of tasks with custom folders and notes. Built with React.",
     link: "https://todolist-mcabrera108.netlify.app/",
-    codelink: "https://imgur.com/ikgvP99.jpg",
+    codelink: "https://github.com/mcabrera108/my-to-do-list",
     projectKey: uuidv4(),
+    linkImg: "https://imgur.com/ikgvP99.jpg",
   },
   {
     title: "Weather App",
@@ -39,6 +34,7 @@ const projectList = [
     link: "",
     codelink: "",
     projectKey: uuidv4(),
+    linkImg: "",
   },
 ];
 export default projectList;
