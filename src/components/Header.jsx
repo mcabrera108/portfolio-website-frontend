@@ -22,7 +22,6 @@ function Header() {
         >
           <ul className={style.navList}>
             <NavOpt navLink="/" navName="Home" />
-            <NavOpt navLink="/blog" navName="Blog" />
             <NavOpt navLink="/projects" navName="Projects" />
             <NavOpt navLink="/contact" navName="Contact" />
           </ul>
