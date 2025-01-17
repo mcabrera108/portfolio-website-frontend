@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import weatherApp from "../assets/weather-app.png";
 const projectList = [
   {
     title: "Figure-Chan App",
@@ -10,31 +11,22 @@ const projectList = [
     linkImg: "https://i.imgur.com/56iCTrO.png",
   },
   {
-    title: "Vidya Game Shop",
-    description:
-      "Online Video Game Retail Shop built with React, Node.js, Express.js, and MongoDB.",
-    link: "",
-    codelink: "",
-    projectKey: uuidv4(),
-    linkImg: "",
-  },
-  {
     title: "My To-Do List",
     description:
       "Frontend productivity app that keeps track of tasks with custom folders and notes. Built with React.",
     link: "https://todolist-mcabrera108.netlify.app/",
     codelink: "https://github.com/mcabrera108/my-to-do-list",
     projectKey: uuidv4(),
-    linkImg: "https://imgur.com/ikgvP99.jpg",
+    linkImg: "https://i.imgur.com/ikgvP99.png",
   },
   {
     title: "Weather App",
     description:
       "Frontend weather app that displays weather data using the WeatherAPI. Built with React.",
-    link: "",
-    codelink: "",
+    link: "https://weather-app-mcabrera.netlify.app/",
+    codelink: "https://github.com/mcabrera108/weather-react-app",
     projectKey: uuidv4(),
-    linkImg: "",
+    linkImg: "https://i.imgur.com/eDECL6O.png",
   },
 ];
 export default projectList;
