@@ -27,7 +27,7 @@ function About() {
 
         <div className={style.resumeDownloadContainer}>
           <a
-            href="src/assets/react.svg"
+            href="src/assets/martin_resume.pdf"
             className={style.resumeDownloadLink}
             download
           >
